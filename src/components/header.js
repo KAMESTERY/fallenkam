@@ -1,42 +1,43 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types';
+import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import MenuIcon from '@material-ui/icons/Menu';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({siteTitle}) => (
+
+    <header>
+      <div>
+        <AppBar style={{ background: '#333' }} position="static">
+          <Toolbar>
+            {/*<IconButton edge="start"*/}
+            {/*            color="inherit" aria-label="menu">*/}
+            {/*  <MenuIcon/>*/}
+            {/*</IconButton>*/}
+            <div className="flex w-100 justify-between">
+              <Typography variant="h6">
+                Justice for the Fallen
+              </Typography>
+              {/*<div>*/}
+              {/*  <Button color="inherit">Button 1</Button>*/}
+              {/*  <Button color="inherit">Button 2</Button>*/}
+              {/*</div>*/}
+            </div>
+
+          </Toolbar>
+        </AppBar>
+      </div>
+    </header>
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
