@@ -13,16 +13,16 @@ const IndexPage = () => (
       <div className="mw9 mt4 center">
         <div className="cf">
           <div className="fl w-100 w-25-ns pa2">
-            <div className="outline bg-white pv4"></div>
+            <div className="bg-white pv4 h5 br2"></div>
           </div>
           <div className="fl w-100 w-25-ns pa2">
-            <div className="outline bg-white pv4"></div>
+            <div className="bg-white pv4 h5 br2"></div>
           </div>
           <div className="fl w-100 w-25-ns pa2">
-            <div className="outline bg-white pv4"></div>
+            <div className="bg-white pv4 h5 br2"></div>
           </div>
           <div className="fl w-100 w-25-ns pa2">
-            <div className="outline bg-white pv4"></div>
+            <div className="bg-white pv4 h5 br2"></div>
           </div>
         </div>
       </div>
