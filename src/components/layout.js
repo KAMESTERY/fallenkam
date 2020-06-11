@@ -29,16 +29,9 @@ const Layout = ({children}) => {
   return (
       <>
         <Header siteTitle={data.datakam.getdocument.Title}/>
-        <div
-            className="vh-100"
-            style={{
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `0 1.0875rem 1.45rem`,
-            }}
-        >
+        <div className="ph3">
           <main>{children}</main>
-          <footer className="fixed bottom-0 w-80">
+          <footer className="fixed bottom-0 mv3 w-100">
             <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK-TECH INC</b>., All Rights Reserved</small>
             <div className="tc mt3">
               <a href="/language/" title="Language"
