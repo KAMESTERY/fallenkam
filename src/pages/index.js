@@ -10,13 +10,22 @@ import '../tachyons.scss';
 const IndexPage = () => (
     <Layout>
       <SEO title="Home"/>
-      <h1>Hello World</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{maxWidth: `300px`, marginBottom: `1.45rem`}}>
-        <Image/>
+      <div className="mw9 mt4 center">
+        <div className="cf">
+          <div className="fl w-100 w-25-ns pa2">
+            <div className="outline bg-white pv4"></div>
+          </div>
+          <div className="fl w-100 w-25-ns pa2">
+            <div className="outline bg-white pv4"></div>
+          </div>
+          <div className="fl w-100 w-25-ns pa2">
+            <div className="outline bg-white pv4"></div>
+          </div>
+          <div className="fl w-100 w-25-ns pa2">
+            <div className="outline bg-white pv4"></div>
+          </div>
+        </div>
       </div>
-      <Button variant="contained" href="/page-2/">Go to page 2 </Button>
     </Layout>
 );
 

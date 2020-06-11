@@ -5,14 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import {useStaticQuery, graphql} from 'gatsby';
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header';
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       datakam {
@@ -25,31 +24,38 @@ const Layout = ({ children }) => {
         {Title}
       }
     }
-  `)
+  `);
 
   return (
-    <>
-      <Header siteTitle={data.datakam.getdocument.Title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+      <>
+        <Header siteTitle={data.datakam.getdocument.Title}/>
+        <div
+            className="vh-100"
+            style={{
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `0 1.0875rem 1.45rem`,
+            }}
+        >
+          <main>{children}</main>
+          <footer className="fixed bottom-0 w-80">
+            <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK-TECH INC</b>., All Rights Reserved</small>
+            <div className="tc mt3">
+              <a href="/language/" title="Language"
+                 className="f6 dib ph2 link mid-gray dim">Language</a>
+              <a href="/terms/" title="Terms"
+                 className="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+              <a href="/privacy/" title="Privacy"
+                 className="f6 dib ph2 link mid-gray dim">Privacy</a>
+            </div>
+          </footer>
+        </div>
+      </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
