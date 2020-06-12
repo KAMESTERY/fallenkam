@@ -1,29 +1,34 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 
 import '../tachyons.scss';
+import Card from '../components/card';
 
 const IndexPage = () => (
     <Layout>
       <SEO title="Home"/>
-      <div className="mw9 mt4 center">
-        <div className="cf">
-          <div className="fl w-100 w-25-ns pa2">
-            <div className="bg-white pv4 h5 br2"></div>
+      <div className="mw9 center">
+        <div className="cf mb6">
+          <div className="fl w-100 mb5 pa2">
+            <div className="bg-white br2">
+              <img
+                  src="//via.placeholder.com/950x250"
+                  className="db h5 w-100" alt="Photo of Jesse Grant"/>
+            </div>
           </div>
-          <div className="fl w-100 w-25-ns pa2">
-            <div className="bg-white pv4 h5 br2"></div>
-          </div>
-          <div className="fl w-100 w-25-ns pa2">
-            <div className="bg-white pv4 h5 br2"></div>
-          </div>
-          <div className="fl w-100 w-25-ns pa2">
-            <div className="bg-white pv4 h5 br2"></div>
-          </div>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
       </div>
     </Layout>
