@@ -29,7 +29,7 @@ const Layout = ({children}) => {
   return (
       <>
         <Header siteTitle={data.datakam.getdocument.Title}/>
-        <div className="ph3 mt6">
+        <div className="ph3 mt-4 mt6-ns">
           <main style={{min_height: "45rem"}}>{children}</main>
           <footer className="fixed bottom-0 pv4 w-100 bg-black">
             <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK-TECH INC</b>., All Rights Reserved</small>
