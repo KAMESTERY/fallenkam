@@ -14,6 +14,9 @@ const IndexPage = () => (
       <div className="mw9 center">
         <div className="cf mb6">
           <div className="fl mt5 mt0-ns w-100 mb5 pa2">
+            <h1 className="fw6 tc center f3 f2-ns lh-title mt0 mb5">
+              Remember the <span className="dark-red">Fallen</span>
+            </h1>
             <div className="br2 justify-center flex-ns">
               <img
                   src="//cdn.cnn.com/cnnnext/dam/assets/200527194814-george-floyd-police-minneapolis-minnesota-dead-protests-00021927-exlarge-169.jpg"
@@ -34,8 +37,6 @@ const IndexPage = () => (
                 </p>
                 <div className="mt4">
                   <Chip label="Support"
-                        variant="outlined"
-                        color="secondary"
                         icon={<FavoriteIcon/>}
                         component="a" target="_blank"
                         href="///www.gofundme.com/f/georgefloyd" clickable/>

@@ -17,7 +17,7 @@ const Header = ({siteTitle}) => (
             {/*</IconButton>*/}
             <div className="flex w-100 justify-between">
               <Typography variant="h6">
-                Justice for the Fallen
+                Fallen
               </Typography>
               <div>
                 <Button startIcon={<AssistantPhotoIcon/>} color="inherit">Become Contributor</Button>
