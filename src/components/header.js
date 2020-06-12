@@ -3,7 +3,8 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
+import Button from '@material-ui/core/Button';
+import AssistantPhotoIcon from '@material-ui/icons/AssistantPhoto';import FavoriteIcon from '@material-ui/icons/Favorite';
 const Header = ({siteTitle}) => (
 
     <header>
@@ -18,10 +19,9 @@ const Header = ({siteTitle}) => (
               <Typography variant="h6">
                 Justice for the Fallen
               </Typography>
-              {/*<div>*/}
-              {/*  <Button color="inherit">Button 1</Button>*/}
-              {/*  <Button color="inherit">Button 2</Button>*/}
-              {/*</div>*/}
+              <div>
+                <Button startIcon={<AssistantPhotoIcon/>} color="inherit">Become Contributor</Button>
+              </div>
             </div>
 
           </Toolbar>
