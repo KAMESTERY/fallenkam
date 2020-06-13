@@ -17,17 +17,17 @@ const IndexPage = () => (
             <h1 className="fw6 tc center f3 f2-ns lh-title mt0 mb5">
               Remember the <span className="dark-red">Fallen</span>
             </h1>
-            <div className="br2 justify-center flex-ns">
+            <div className="br2 justify-center flex-l">
               <img
                   src="//cdn.cnn.com/cnnnext/dam/assets/200527194814-george-floyd-police-minneapolis-minnesota-dead-protests-00021927-exlarge-169.jpg"
-                  className="db h5 w-50-ns br3 fit-cover"
+                  className="db h5-l w-30-l br3 fit-cover"
                   alt="Photo of George Floyd"/>
 
-              <article className="pl4-ns mw-3  w-50-ns mv3">
+              <article className="pl4-l mw-3 w-50-l mv3">
                 <div>
-                  <h1 className="f4">George Floyd</h1>
+                  <h1 className="f4 dark-red">George Floyd</h1>
                 </div>
-                <p className="lh-copy mr5 f6">
+                <p className="lh-copy mr4-l f6">
                   George Perry Floyd Jr. (October 14, 1973 – May 25, 2020) was
                   an African-American man who was killed
                   by police during an arrest in Minneapolis on May 25, 2020.
