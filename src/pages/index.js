@@ -4,17 +4,9 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import '../tachyons.scss';
-import Card from '../components/card';
 import Chip from '@material-ui/core/Chip';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardGrid from '../components/card-grid';
-
-const items = [];
-
-const elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-elements.map((value, index) => {
-  items.push(<Card key={index}/>);
-});
 
 const IndexPage = () => (
     <Layout>
@@ -53,7 +45,7 @@ const IndexPage = () => (
               </article>
             </div>
           </div>
-          <CardGrid data={elements} />
+          <CardGrid data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
         </div>
       </div>
     </Layout>
