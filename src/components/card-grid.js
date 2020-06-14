@@ -4,7 +4,7 @@ import Card from './card';
 const CardGrid = ({data}) => (
     <div>
       {data.map((card, index) => {
-        return <Card key={index}/>;
+        return <Card data={card} key={index}/>;
       })}
     </div>
 );
