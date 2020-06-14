@@ -16,8 +16,8 @@ const Header = ({siteTitle}) => (
             {/*  <MenuIcon/>*/}
             {/*</IconButton>*/}
             <div className="flex w-100 justify-between">
-              <Typography variant="h6">
-                Fallen
+              <Typography variant="h5">
+                ✊🏾 Fallen
               </Typography>
               <div>
                 <Button startIcon={<AssistantPhotoIcon/>} color="inherit">Become Contributor</Button>
