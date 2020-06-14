@@ -3,6 +3,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import Chip from '@material-ui/core/Chip';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import {filterMediaByTag} from '../utils/media-utils';
+import base64 from 'base-64'
 
 const FeaturedArticle = ({}) => {
   const data = useStaticQuery(graphql`
@@ -38,7 +39,7 @@ const FeaturedArticle = ({}) => {
               <h1 className="f2 dark-red">{data.datakam.getdocument.Title}</h1>
             </div>
             <p className="lh-copy mr5-l f6">
-              {window.atob(data.datakam.getdocument.Body)}
+              {base64.decode(data.datakam.getdocument.Body)}
             </p>
             <div className="mt4">
               <Chip label="Support"
