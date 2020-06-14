@@ -4,9 +4,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import '../tachyons.scss';
-import Chip from '@material-ui/core/Chip';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import CardGrid from '../components/card-grid';
+import FeaturedArticle from '../components/featured-article';
 
 const IndexPage = () => (
     <Layout>
@@ -17,35 +16,9 @@ const IndexPage = () => (
             <h1 className="fw6 tc center f3 f2-ns lh-title mt0 mb5">
               Remember the <span className="dark-red">Fallen</span>
             </h1>
-            <div className="br2 justify-center flex-l">
-              <img
-                  src="//cdn.cnn.com/cnnnext/dam/assets/200527194814-george-floyd-police-minneapolis-minnesota-dead-protests-00021927-exlarge-169.jpg"
-                  className="db h5-l w-30-l br3 fit-cover"
-                  alt="Photo of George Floyd"/>
-
-              <article className="pl4-l mw-3 w-50-l mv3">
-                <div>
-                  <h1 className="f4 dark-red">George Floyd</h1>
-                </div>
-                <p className="lh-copy mr4-l f6">
-                  George Perry Floyd Jr. (October 14, 1973 – May 25, 2020) was
-                  an African-American man who was killed
-                  by police during an arrest in Minneapolis on May 25, 2020.
-                  Protests in response to both Floyd's death,
-                  and more broadly to police violence against black people,
-                  quickly spread across the United States and internationally.
-                </p>
-                <div className="mt4">
-                  <Chip label="Support"
-                        icon={<FavoriteIcon/>}
-                        component="a" target="_blank"
-                        href="///www.gofundme.com/f/georgefloyd" clickable/>
-                </div>
-
-              </article>
-            </div>
+            <FeaturedArticle/>
           </div>
-          <CardGrid data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
+          <CardGrid data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}/>
         </div>
       </div>
     </Layout>
