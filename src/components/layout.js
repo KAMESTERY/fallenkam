@@ -30,19 +30,19 @@ const Layout = ({children}) => {
       <>
         <Header siteTitle={data.datakam.getdocument.Title}/>
         <div className="ph3 mt-4 mt6-ns">
-          <main style={{min_height: "45rem"}}>{children}</main>
-          <footer className="fixed bottom-0 pv4 w-100 bg-black">
-            <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK git TECH INC</b>., All Rights Reserved</small>
-            <div className="tc mt3">
-              <a href="/language/" title="Language"
-                 className="f6 dib ph2 link mid-gray dim">Language</a>
-              <a href="/terms/" title="Terms"
-                 className="f6 dib ph2 link mid-gray dim">Terms of Use</a>
-              <a href="/privacy/" title="Privacy"
-                 className="f6 dib ph2 link mid-gray dim">Privacy</a>
-            </div>
-          </footer>
+          <main className="mb3 min-vh-100">{children}</main>
         </div>
+        <footer className="pv4 w-100 bg-black">
+          <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK git TECH INC</b>., All Rights Reserved</small>
+          <div className="tc mt3">
+            <a href="/language/" title="Language"
+               className="f6 dib ph2 link mid-gray dim">Language</a>
+            <a href="/terms/" title="Terms"
+               className="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+            <a href="/privacy/" title="Privacy"
+               className="f6 dib ph2 link mid-gray dim">Privacy</a>
+          </div>
+        </footer>
       </>
   );
 };

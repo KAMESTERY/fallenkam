@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import '../tachyons.scss';
+import '../styles.scss';
 import CardGrid from '../components/card-grid';
 import FeaturedArticle from '../components/featured-article';
 import {graphql, useStaticQuery} from 'gatsby';
