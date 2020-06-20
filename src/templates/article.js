@@ -18,11 +18,18 @@ function getFileUrl(mediaItem, defaultUrl) {
       ? defaultUrl : mediaItem[0].FileUrl;
 }
 
-const Article = ({location}) => {
-  const mediaItems = location.state.data.Media;
+export default function Article(props) {
+
+  const {pageContext} = props;
+  const {document} = pageContext;
+  console.log('====================================');
+  console.log(`This is a item injected from pageContext:${JSON.stringify(pageContext)}`);
+  console.log('====================================');
+
+  const mediaItems = document.Media;
   const mediaLink = filterMediaByTag(mediaItems, '#link');
   const mediaFtImage = filterMediaByTag(mediaItems, '#headerimage');
-  const title = location.state.data.Title;
+  const title = document.Title;
 
   return (
       <Layout>
@@ -56,7 +63,7 @@ const Article = ({location}) => {
                 </div>
               </div>
               <p className="lh-copy  f6">
-                {base64.decode(location.state.data.Body)}
+                {base64.decode(document.Body)}
               </p>
             </article>
           </div>
@@ -66,4 +73,16 @@ const Article = ({location}) => {
   );
 };
 
-export default Article;
+// export const query = graphql`
+//   query($documentID: String!) {
+//       datakam {
+//         getdocument(
+//           dockey:
+//           {
+//             DocumentID: $documentID
+//             Topic: "com.kamestery.devdata:##:fallen"
+//           })
+//         {Title Body Media {MediaID FileUrl Tags}}
+//       }
+//   }
+// `;

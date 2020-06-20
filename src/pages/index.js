@@ -17,7 +17,7 @@ const IndexPage = () => {
           {
             Name: "com.kamestery.devdata:##:fallen"
           })
-        {Title Body Media {MediaID FileUrl Tags}}
+        {Title Body Slug Media {MediaID FileUrl Tags}}
       }
     }
   `);

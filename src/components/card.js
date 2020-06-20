@@ -3,6 +3,7 @@ import {filterMediaByTag} from '../utils/media-utils';
 import {Link} from 'gatsby';
 
 const Card = ({data}) => {
+  console.log(`CARD DATA:: ${JSON.stringify(data)}`);
   const mediaFtImage = filterMediaByTag(data.Media, '#headerimage');
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
@@ -12,7 +13,7 @@ const Card = ({data}) => {
            onMouseEnter={toggleHover}
            onMouseLeave={toggleHover}>
         <article className="hide-child relative center">
-          <Link to="/article/" state={{data: data}}>
+          <Link to={`${data.Slug}`} state={{data: data}}>
             <img style={{cursor: 'pointer'}}
                  src={mediaFtImage === undefined || mediaFtImage.length === 0
                      ? '//via.placeholder.com/350x150' : mediaFtImage[0].FileUrl}
@@ -20,7 +21,7 @@ const Card = ({data}) => {
                  alt={'Photo of ' + data.Title}/>
           </Link>
           <div>
-            <Link to="/article/"
+            <Link to={`${data.Slug}`}
                   className="f4 mv3 db link light-gray hover-dark-red"
                   state={{data: data}}>
               {data.Title}

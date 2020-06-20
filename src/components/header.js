@@ -22,7 +22,7 @@ const Header = ({siteTitle}) => (
             <div className="flex w-100 justify-between items-center">
               <Link to="/" className="link">
                 <Typography style={{color: 'white'}} variant="h5">
-                  ✊🏾 Fallen
+                  <span role="img" aria-label="fist emoji">✊🏾 </span>Fallen
                 </Typography>
               </Link>
 
