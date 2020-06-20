@@ -31,7 +31,7 @@ const Layout = ({children}) => {
         <div className="stl-bg">
           <Header siteTitle={data.datakam.getdocument.Title}/>
           <div className="ph3 center mw9 mt-4 mt6-ns">
-            <main className="mb3 min-vh-100">{children}</main>
+            <main className="mb3 mt6rem mt0-ns min-vh-100">{children}</main>
           </div>
           <footer className="pv4 w-100 bg-black">
             <small className="f6 db tc">© 2020 <b className="ttu">OUTCASTGEEK git TECH INC</b>., All Rights Reserved</small>
