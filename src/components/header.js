@@ -12,7 +12,7 @@ const Header = ({siteTitle}) => (
 
     <header>
       <div>
-        <AppBar style={{background: '#333', position: 'fixed', top: 0}}
+        <AppBar style={{background: '#130000', position: 'fixed', top: 0}}
                 position="static">
           <Toolbar>
             {/*<IconButton edge="start"*/}

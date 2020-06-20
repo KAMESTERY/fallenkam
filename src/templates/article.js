@@ -37,7 +37,7 @@ export default function Article(props) {
         <section className="mw7 center">
           <div className="nt4 white mb3">
             <Breadcrumbs aria-label="breadcrumb">
-              <Link className="f4 mv3 db link mid-gray hover-dark-red"
+              <Link className="f4 mv3 db link gray hover-dark-red"
                     to="/">Fallen
               </Link>
               <p className="f4 mv3 db link light-gray">
@@ -48,12 +48,12 @@ export default function Article(props) {
           <div className="br2">
             <img
                 src={getFileUrl(mediaFtImage)}
-                className="db  br3 fit-cover"
+                className="db img br3 fit-cover"
                 alt={'Photo of George Floyd' + title}/>
             <article className=" mw-3 mv3">
               <div>
                 <h1 className="f2 dark-red">{title}</h1>
-                <div className="mt4">
+                <div className="mb4">
                   {Object.keys(mediaLink).length === 0 ?
                       '' : <Chip label="Support"
                                  icon={<FavoriteIcon/>}

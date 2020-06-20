@@ -32,7 +32,7 @@ const FeaturedArticle = ({}) => {
               src={mediaFtImage === undefined || mediaFtImage.length === 0
                   ? '#' : mediaFtImage[0].FileUrl}
 
-              className="db h6-l w-50-l br3 fit-cover"
+              className="db img h6-l w-50-l br3 fit-cover"
               alt="Photo of George Floyd"/>
           <article className="pl4-l mw-3 w-50-l mv3">
             <div>
