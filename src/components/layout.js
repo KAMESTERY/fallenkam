@@ -30,7 +30,7 @@ const Layout = ({children}) => {
       <>
         <div className="stl-bg">
           <Header siteTitle={data.datakam.getdocument.Title}/>
-          <div className="ph3 mt-4 mt6-ns">
+          <div className="ph3 center mw9 mt-4 mt6-ns">
             <main className="mb3 min-vh-100">{children}</main>
           </div>
           <footer className="pv4 w-100 bg-black">
