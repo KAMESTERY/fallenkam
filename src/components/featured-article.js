@@ -32,13 +32,13 @@ const FeaturedArticle = ({}) => {
               src={mediaFtImage === undefined || mediaFtImage.length === 0
                   ? '#' : mediaFtImage[0].FileUrl}
 
-              className="db img mr3-l h6-l w-50-l br3 fit-cover"
+              className="db w-100 mr3-l h6-l w-50-l br3 fit-cover"
               alt="Photo of George Floyd"/>
           <article className="pl4-l mw-3 ml2-l w-50-l mv3">
             <div>
               <h1 className="f2 dark-red">{data.datakam.getdocument.Title}</h1>
             </div>
-            <p className="lh-copy mr3-l f6">
+            <p className="lh-copy mr5-l f6">
               {base64.decode(data.datakam.getdocument.Body)}
             </p>
             <div className="mt4">

@@ -48,7 +48,7 @@ export default function Article(props) {
           <div className="br2">
             <img
                 src={getFileUrl(mediaFtImage)}
-                className="db img br3 fit-cover"
+                className="db w-100 br3 fit-cover"
                 alt={'Photo of George Floyd' + title}/>
             <article className=" mw-3 mv3">
               <div>
