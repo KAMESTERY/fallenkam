@@ -28,8 +28,8 @@ const Header = ({siteTitle}) => (
 
 
               <div>
-                <Button startIcon={<AssistantPhotoIcon/>} color="inherit">Become
-                  Contributor</Button>
+                {/*<Button startIcon={<AssistantPhotoIcon/>} color="inherit">Become*/}
+                {/*  Contributor</Button>*/}
               </div>
             </div>
 
