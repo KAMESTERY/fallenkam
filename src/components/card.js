@@ -3,7 +3,7 @@ import {filterMediaByTag} from '../utils/media-utils';
 import {Link} from 'gatsby';
 
 const Card = ({data}) => {
-  console.log(`CARD DATA:: ${JSON.stringify(data)}`);
+  // console.log(`CARD DATA:: ${JSON.stringify(data)}`);
   const mediaFtImage = filterMediaByTag(data.Media, '#headerimage');
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);

@@ -30,7 +30,7 @@ const IndexPage = () => {
               <h1 className="fw6 tc center f1 f2-ns mt0 mb5">
                 Remember the <span className="dark-red">Fallen </span>
               </h1>
-              <FeaturedArticle/>
+              <FeaturedArticle data={data.datakam.fallen}/>
             </div>
             {/*{JSON.stringify(data.datakam.fallen)}*/}
             <CardGrid data={data.datakam.fallen}/>

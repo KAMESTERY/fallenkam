@@ -22,9 +22,9 @@ export default function Article(props) {
 
   const {pageContext} = props;
   const {document} = pageContext;
-  console.log('====================================');
-  console.log(`This is a item injected from pageContext:${JSON.stringify(pageContext)}`);
-  console.log('====================================');
+  // console.log('====================================');
+  // console.log(`This is a item injected from pageContext:${JSON.stringify(pageContext)}`);
+  // console.log('====================================');
 
   const mediaItems = document.Media;
   const mediaLink = filterMediaByTag(mediaItems, '#link');

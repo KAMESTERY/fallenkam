@@ -20,7 +20,7 @@ exports.createPages = async function({actions, graphql}) {
   `);
   result.data.datakam.fallen.forEach(document => {
     const slug = document.Slug;
-    console.log(`DOCUMENT:::: ${slug}`);
+    // console.log(`DOCUMENT:::: ${slug}`);
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/article.js`),
