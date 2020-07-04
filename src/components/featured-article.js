@@ -12,26 +12,20 @@ export default class FeaturedArticle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      seconds: parseInt(props.startTimeInSeconds, 10) || 0,
       idx: 0,
     };
   }
-
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 8000);
   }
-
   componentWillUnmount() {
     clearInterval(this.interval);
   }
-
   tick() {
     this.setState(state => ({
-      seconds: state.seconds + 1,
       idx: this.props.data.length - 1 === state.idx ? 0 : state.idx + 1,
     }));
   }
-
 render(){
   const document = this.props.data[this.state.idx];
   const mediaItems = document.Media;
